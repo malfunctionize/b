@@ -54,7 +54,7 @@ module.exports = {
 //      }
 //    }
     {
-      "uri": "tumblr",
+      "uri": "https://github.com/malfunctionize/tu/index.js",
       "method": "publish",
       "params": {
         "header": "{{self.tumblr}}",
