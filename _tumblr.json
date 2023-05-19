@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "tumblr",
+  "type": "object",
+  "properties": {
+    "required": [
+      "name", "config"
+    ],
+    "name": {
+      "type": "string",
+      "title": "tumblr name"
+    },
+    "config": {
+      "type": "object",
+      "properties": {
+        "required": [
+          "consumer_key",
+          "consumer_secret",
+          "token",
+          "token_secret"
+        ],
+        "consumer_key": {
+          "type": "string"
+        },
+        "consumer_secret": {
+          "type": "string"
+        },
+        "token": {
+          "type": "string"
+        },
+        "token_secret": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
