@@ -11,7 +11,7 @@ module.exports = {
       }
     },
     {
-      "uri": "https://github.com/malfunctionize/lla/index.js",
+      "uri": "https://github.com/malfunctionize/lla.git/index.js",
       "method": "run",
       "params": {
         "message": {
@@ -30,7 +30,7 @@ module.exports = {
       }
     },
     {
-      "uri": "https://github.com/malfunctionize/auto/index.js",
+      "uri": "https://github.com/malfunctionize/auto.git/index.js",
       "method": "run",
       "params": {
         "cfg_scale": 15,
@@ -54,7 +54,7 @@ module.exports = {
 //      }
 //    }
     {
-      "uri": "https://github.com/malfunctionize/tu/index.js",
+      "uri": "https://github.com/malfunctionize/tu.git/index.js",
       "method": "publish",
       "params": {
         "header": "{{self.tumblr}}",

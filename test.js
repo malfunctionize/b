@@ -11,7 +11,7 @@ module.exports = {
       }
     },
     {
-      "uri": "https://github.com/malfunctionize/lla/index.js",
+      "uri": "https://github.com/malfunctionize/lla.git/index.js",
       "method": "run",
       "params": {
         "message": {
