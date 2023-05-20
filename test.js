@@ -19,6 +19,7 @@ module.exports = {
           "p": "### Instruction\n\n\rI want you to give me a random landmark location in the nation of {{local.nation}}. simply write the name of the landmark location. No description. Just the name.\n\n\r### Response\n\n"
         }
       },
+      "queue": true,
       "returns": "local.location"
     }
   ]

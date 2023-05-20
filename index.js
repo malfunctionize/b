@@ -19,7 +19,8 @@ module.exports = {
           "p": "### Instruction\n\n\rI want you to give me a random landmark location in the nation of {{local.nation}}. simply write the name of the landmark location. No description. Just the name.\n\n\r### Response\n\n"
         }
       },
-      "returns": "local.location"
+      "returns": "local.location",
+      "queue": true
     },
     {
       "method": "set",
@@ -37,7 +38,8 @@ module.exports = {
         "steps": 30,
         "prompt": "{{local.prompt}}",
         "negative_prompt": "out of frame, watermark, text, caption, (blurry, un-sharp, fuzzy, un-detailed skin:1.4), (twins:1.4), (geminis:1.4), (wrong eyeballs:1.1), (cloned face:1.1), (perfect skin:1.2), (mutated hands and fingers:1.3), disconnected hands, disconnected limbs, amputation, (semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime, doll, overexposed, photoshop, oversaturated:1.4)"
-      }
+      },
+      "queue": true
     },
 //    {
 //      "method": "fs.write",
