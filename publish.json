@@ -1,4 +1,4 @@
-module.exports = {
+{
   "run": [
     {
       "method": "set",
@@ -41,20 +41,6 @@ module.exports = {
       },
       "queue": true
     },
-//    {
-//      "method": "fs.write",
-//      "params": {
-//        "path": "img.png",
-//        "buffer": "{{Buffer.from(input.images[0], 'base64')}}"
-//      }
-//    },
-//    {
-//      "method": "fs.write",
-//      "params": {
-//        "path": "prompt.txt",
-//        "string": "<b>{{local.animal}} kaiju.</b><br><br>- spotted in {{local.location}} ({{local.nation}})."
-//      }
-//    }
     {
       "uri": "https://github.com/malfunctionize/tumblr.git/index.js",
       "method": "publish",
@@ -65,12 +51,6 @@ module.exports = {
           "text": "<b>{{local.animal}} kaiju.</b><br><br>- spotted in {{local.location}} ({{local.nation}})."
         }
       }
-    },
-//    {
-//      "method": "sleep",
-//      "params": {
-//        "min": 15
-//      }
-//    }
+    }
   ]
 }

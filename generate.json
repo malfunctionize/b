@@ -1,4 +1,4 @@
-module.exports = {
+{
   "run": [
     {
       "method": "set",
@@ -41,36 +41,20 @@ module.exports = {
       },
       "queue": true
     },
-//    {
-//      "method": "fs.write",
-//      "params": {
-//        "path": "img.png",
-//        "buffer": "{{Buffer.from(input.images[0], 'base64')}}"
-//      }
-//    },
-//    {
-//      "method": "fs.write",
-//      "params": {
-//        "path": "prompt.txt",
-//        "string": "<b>{{local.animal}} kaiju.</b><br><br>- spotted in {{local.location}} ({{local.nation}})."
-//      }
-//    }
     {
-      "uri": "https://github.com/malfunctionize/tumblr.git/index.js",
-      "method": "publish",
+      "method": "fs.write",
       "params": {
-        "header": "{{self.tumblr}}",
-        "body": {
-          "base64": "{{input.images[0]}}",
-          "text": "<b>{{local.animal}} kaiju.</b><br><br>- spotted in {{local.location}} ({{local.nation}})."
-        }
+        "path": "posts/{{Date.now()}}.png",
+        "buffer": "{{Buffer.from(input.images[0], 'base64')}}"
       }
     },
-//    {
-//      "method": "sleep",
-//      "params": {
-//        "min": 15
-//      }
-//    }
+    {
+      "method": "fs.write",
+      "params": {
+        "path": "posts/{{Date.now()}}.txt",
+        "string": "<b>{{local.animal}} kaiju.</b><br><br>- spotted in {{local.location}} ({{local.nation}})."
+      }
+    }
+    }
   ]
 }
