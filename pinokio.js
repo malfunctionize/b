@@ -1,6 +1,6 @@
 module.exports = {
   menu: [{
-    html: "<i class='fa-brands fa-tumblrx'></i> Configure Tumblr",
+    html: "<i class='fa-brands fa-tumblr'></i> Configure Tumblr",
     type: "link",
     href: "tumblr.json"
   }],
